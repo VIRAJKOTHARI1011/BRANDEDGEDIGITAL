@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND EDGE DIGITAL</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="/Brand_Edge_Logo_white.png">
+     <!-- Google Fonts Files -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./assets/css/hawk-bsb.css">
+     <!-- BSB CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/bs-brain/bsb.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <link rel="stylesheet" href="/style/style.css">
+     <!-- CSS Files -->
+      <style type="text/css">
+          /* ABOUT US CSS */
+
+/* Banner container styling */
+.banner-container {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/project/web\ design.png') no-repeat center center/cover;
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-position: top center;
+  background-size: cover;
+  margin-top: 90px;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+  position: absolute;
+  top: 270px;
+  left: 520px;
+  font-size: 14px;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));/* Background with transparency */
+  border-radius: 5px;
+  z-index: 1;
+  background-color: var(--dark-grey-color);
+  padding: 05px 30px;
+  line-height: 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: #3bb3c3;
+}
+
+/* Banner heading styling */
+.banner-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 100px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.banner-container span{
+  color: #3bb3c3;
+}
+.container p{
+    text-align: justify;
+}
+
+
+
+@media (max-width: 576px) {
+
+  .breadcrumb {
+    position: absolute;
+    top: 270px;
+    left: 160px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));/* Background with transparency */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  }
+      </style>
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+  <header id="header">
+    <nav id="#" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <!-- Brand Logo and Text -->
+        <div class="navbar-brand d-flex align-items-center">
+          <img src="/brand_logo_white.jpeg" alt="Brand Edge Logo" class="brand-logo">
+          <div>
+          </div>
+        </div>
+  
+        <!-- Navbar Links -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link me-5" href="/index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link me-5" href="./about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link me-5" href="./portfolio.html">PORTFOLIO</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-5 active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="./smm.html">Social Media Marketing</a></li>
+                <li><a class="dropdown-item" href="./content.html">Content Writing</a></li>
+                <li><a class="dropdown-item active" href="./graphics.html">Graphic Designing</a></li>
+                <li><a class="dropdown-item" href="./seo.html">SEO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+<!-- Loader HTML -->
+<div id="loader" class="loader-overlay">
+  <div class="loader-spinner"></div>
+  <p id="loader-message">Loading...</p>
+</div>
+
+<div class="banner-container">
+  <div class="breadcrumb">
+      <a href="/index.html"><i class="themifyicon ti-home"></i>Home</a> > <span>Graphic Designing</span>
+  </div>
+  <div class="banner-content">
+      <h1>Graphic Designing</h1>
+  </div>
+</div>
+
+
+<main class="container py-5">
+    <!-- Card 1 -->
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <img src="/assets/img/grahicdesign/Graphic-01.jpg" class="card-img-top" alt="Performance Marketing">
+                <div class="card-body">
+                    <h3>What is Graphic Designing?</h3>
+                    <p>Conceptualize and develop design solutions using principles of design to create visual communications that meet the needs of the project..</p>
+                    <ul class="list-style">
+                        <li>Cost-Effective Lead Generation</li>
+                        <li>Enhanced Brand Visibility</li>
+                        <li>Increased Trust and Authority</li>
+                        <li>Improved SEO and Conversions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <img src="/assets/img/grahicdesign/Graphic-02.jpg" class="card-img-top" alt="Performance Marketing Outcomes">
+                <div class="card-body">
+                    <h3>Outcomes of Graphic Designing</h3>
+                    <p>Ability to Conceptualize and develop design solutions using principles of design to create visual communications that meet the needs of the project.</p>
+                    <ul class="list-style">
+                        <li>Enhanced Brand Identity</li>
+                        <li>Effective Communication</li>
+                        <li>Increased Engagement</li>
+                        <li>User Experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="row">
+        <div class="col-lg-6 order-lg-2 mb-4">
+            <div class="card">
+                <img src="/assets/img/grahicdesign/Graphic-03.jpg" class="card-img-top" alt="Growth with Performance Marketing">
+                <div class="card-body">
+                    <h3>Why Choose Graphic Designing?</h3>
+                    <p>Keep current with visual media design trends, technologies and industry practices using strategies that enhance work performance.</p>
+                    <ul class="list-style">
+                        <li>Scalable Solutions</li>
+                        <li>Transparent Reporting</li>
+                        <li>Data-Driven Insights</li>
+                        <li>Enhanced Customer Engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 mb-4">
+            <div class="card">
+                <img src="/assets/img/grahicdesign/Graphic-04.jpg" class="card-img-top" alt="Performance Marketing Benefits">
+                <div class="card-body">
+                    <h3>Benefits of Graphic Designing</h3>
+                    <p>Design, develop and create a variety of media products using relevant, current and/or emerging technologies.</p>
+                    <ul class="list-style">
+                        <li>Enhanced Brand Identity</li>
+                        <li>Effective Communication</li>
+                        <li>Increased Engagement</li>
+                        <li>Business Success</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="d-flex justify-content-between mt-4">
+        <!-- Previous Button -->
+        <a href="./content.html" class="btn btn-link text-primary text-decoration-none">
+            &larr; Previous
+        </a>
+    
+        <!-- Next Button -->
+        <a href="./seo.html" class="btn btn-link text-primary text-decoration-none">
+            Next &rarr;
+        </a>
+    </div>
+</main>
+
+
+<!-- Footer 5 - Bootstrap Brain Component -->
+<footer class="footer py-3 py-md-5 py-xl-8 bsb-section-py-xxl-1">
+  <div class="container">
+    <div class="container-fluid bg-accent">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-11">
+
+          <!-- Widgets - Bootstrap Brain Component -->
+          <section class="py-4 py-md-5 py-xl-8">
+            <div class="container-fluid overflow-hidden">
+              <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="widget">
+                      <img class="bsb-tpl-logo-footer"  src="/Brand_Edge_Logo_white.png" alt="brand_edge" style="width: 50%;height: 50%;">
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="widget">
+                    <h4 class="widget-title mb-4">Services</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                       <b>AI Solutions</b>
+                      </li>
+                      <li class="mb-2">
+                       <b>Digital Marketing</b> 
+                      </li>
+                      <li class="mb-2">
+                        <b>SEO Consultancy</b>
+                      </li>
+                      <li class="mb-0">
+                        <b>Web Design</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="widget">
+                    <h4 class="widget-title mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="./about.html" class="link-dark text-decoration-none">About</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./performance.html" class="link-dark text-decoration-none">Services</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./contact.html" class="link-dark text-decoration-none">Contact Us</a>
+                      </li>
+                      <li class="mb-0">
+                        <a href="./privacy.html" class="link-dark text-decoration-none">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Copyright - Bootstrap Brain Component -->
+          <div class="py-4 py-md-5 py-xl-8 border-top border-accent-subtle">
+            <div class="container-fluid overflow-hidden">
+              <div class="row gy-4 gy-md-0">
+                <div class="col-xs-12 col-md-7 order-1 order-md-0">
+                  <div class="copyright text-center text-md-start">
+                    &copy; 2024. All Rights Reserved.
+                  </div>
+                  <div class="credits text-secondary text-center text-md-start mt-2 fs-7">
+                     &copy;<a href="#" class="link-secondary text-decoration-none">Brand Edge Digital</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script>
+    AOS.init();
+   
+   document.addEventListener('DOMContentLoaded', () => {
+     const loader = document.getElementById('loader');
+     const content = document.querySelector('.content');
+     const loaderMessage = document.getElementById('loader-message');
+   
+     // Detect network speed using the navigator.connection API
+     let connectionType = '4g'; // Default to a fast connection type
+     if (navigator.connection && navigator.connection.effectiveType) {
+       connectionType = navigator.connection.effectiveType;
+     }
+   
+     // Set different loader times based on connection type
+     let loaderTimeout = 2000; // Default to 2 seconds for fast connections
+   
+     switch (connectionType) {
+       case 'slow-2g':
+         loaderTimeout = 8000; // 8 seconds for very slow connections
+         loaderMessage.innerText = 'Loading... This may take a while due to your connection.';
+         break;
+       case '2g':
+         loaderTimeout = 6000; // 6 seconds for 2G
+         loaderMessage.innerText = 'Loading... Please be patient!';
+         break;
+       case '3g':
+         loaderTimeout = 4000; // 4 seconds for 3G
+         loaderMessage.innerText = 'Loading... Hang tight!';
+         break;
+       case '4g':
+       case '5g':
+       default:
+         loaderTimeout = 2000; // 2 seconds for fast connections (4G or higher)
+         loaderMessage.innerText = 'Loading...';
+     }
+   
+     // Hide loader after the determined timeout and show content
+     setTimeout(() => {
+       loader.style.display = 'none';
+       content.style.visibility = 'visible';
+     }, loaderTimeout);
+   });
+   document.getElementById('acceptCookies').addEventListener('click', function() {
+       const endTime = new Date();
+       const timeSpent = Math.floor((endTime - startTime) / 1000); // time spent in seconds
+   
+       const dataToSend = {
+           timeSpent: timeSpent,
+           userId: loggedInUserId, // Replace with actual user ID if applicable
+           sessionId: generateSessionId(), // Function to generate session ID
+           timestamp: new Date().toISOString(),
+           userAgent: navigator.userAgent,
+           referrer: document.referrer,
+           acceptedCookies: {
+               functional: true, // Adjust based on user selection
+               analytical: true,
+               marketing: false
+           }
+       };
+   
+       fetch('storeTime.php', {
+           method: 'POST',
+           headers: {
+               'Content-Type': 'application/json'
+           },
+           body: JSON.stringify(dataToSend)
+       })
+       .then(response => response.json())
+       .then(data => {
+           console.log('Success:', data);
+           document.getElementById('cookiePopup').style.display = 'none';
+       })
+       .catch((error) => {
+           console.error('Error:', error);
+       });
+   });
+   
+   </script>
+   
+     <!-- Javascript Files: Vendors -->
+     <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+     <!-- Javascript Files: Controllers -->
+     <script src="./assets/css/hawk-bsb.js"></script>
+</body>
+</html>
