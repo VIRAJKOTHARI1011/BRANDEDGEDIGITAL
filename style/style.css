@@ -68,38 +68,92 @@ header{
   section{
     overflow: hidden;
   }
-  /* Ensure the background image fills the section */
-  #scrollspyHero {
-    background-image: url("../assets/img/hero/background.jpg");
-    background-size: cover; /* Ensures image covers entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Parallax effect, image stays in place */
-    min-height: 110vh; /* Ensures section height is at least 100% of the viewport */
-    position: relative; /* Ensure proper positioning for the overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Prevent horizontal overflow */
+
+.hero-section {
+  position: relative;
+  background-color: #f8f9fa;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section video {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the area */
+  z-index: 1; /* Behind the text content */
+}
+
+.hero-content {
+  position: absolute;
+  top: 70%; /* Vertically center the content */
+  left: 30px; /* Keep the content at the extreme left */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  z-index: 2; /* Above the video */
+  color: #6552D0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.hero-content span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+}
+
+.btn-contact {
+  margin-top: 20px;
+  background-color: #6552D0;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #523bba;
+}
+.btn-contact a{
+  text-decoration: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content span {
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive scaling */
+    text-align: center; /* Center-align heading for better mobile appearance */
+    margin: 0px 0; /* Add spacing */
   }
-
- #scrollspyHero .container {
-    z-index: 2; /* Ensure content appears above the overlay and background */
+  
+  .btn-contact {
+    font-size: 1rem;
+    padding: 10px 20px; /* Comfortable button size */
+    display: block; /* Ensure it doesn’t sit inline */
+    margin: 20px auto; /* Center-align the button */
+    text-align: center; /* Ensures text within the button is centered */
+  }
+  
+  .hero-content {
+    padding: 10px; /* Add padding for breathing space */
+    text-align: center; /* Center-align all text within the hero content */
+  }
+  
+  video {
+    max-width: 100%; /* Ensure video is responsive */
+    height: auto;
+  }
+  
 }
 
-
-
-/* Overlay effect */
-#scrollspyHero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adds a subtle dark overlay */
-    z-index: 1; /* Sits behind the content but above the background */
-}
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0.125em;
