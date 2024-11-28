@@ -1,0 +1,435 @@
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+header{
+  background-color: #ffffff;
+}
+.navbar-brand img{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+ /* Initial Navbar Styling */
+.navbar {
+  background-color:#ffffff; /* Start with white background */
+  box-shadow: none; /* No shadow initially */
+ /* transition: background-color 0.3s ease, box-shadow 0.3s ease; Smooth transition */
+}
+
+/* Navbar when scrolled */
+.navbar.scrolled .brand-text {
+  word-spacing: 10px;
+  letter-spacing: 0.5em;
+  color: black; /* Keep the brand text black even when scrolled */
+  -webkit-text-stroke: 1px black; /* Ensures the black border around letters remains */
+  transition: color 0.3s ease;
+}
+
+/* Navbar Link Styles */
+/* Navbar Link Styles */
+.navbar .nav-link {
+  color: black; /* Default link color when navbar is white */
+  transition: color 0.3s ease;
+}
+
+/* Change link color when the navbar is scrolled */
+.navbar.scrolled .nav-link {
+  color: black; /* Link color when the navbar background is black */
+}
+
+/* Optional: Active link styles */
+.navbar .nav-link.active{
+  color: black; /* Highlight active link */
+  text-transform: underline;
+  transition: 0.3 ease-in;
+  font-weight: bold;
+}
+
+
+
+/* Optional: Adjust logo or text in the navbar */
+.navbar .brand-text {
+  color: black; /* Default brand text color */
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .brand-text {
+  color: black; /* Keep the brand text black even when scrolled */
+  -webkit-text-stroke: 1px black; /* Ensures the black border around letters remains */
+  text-stroke: 1px black;
+  transition: color 0.3s ease;
+}
+
+  section{
+    overflow: hidden;
+  }
+  /* Ensure the background image fills the section 
+  #scrollspyHero {
+    background-image: url("../assets/img/hero/background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 110vh; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+  }
+
+ #scrollspyHero .container {
+    z-index: 2; 
+}
+
+
+
+/* Overlay effect 
+#scrollspyHero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+*/
+.hero-section {
+  position: relative;
+  background-color: #f8f9fa;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section video {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the area */
+  z-index: 1; /* Behind the text content */
+}
+
+.hero-content {
+  position: absolute;
+  top: 70%; /* Vertically center the content */
+  left: 30px; /* Keep the content at the extreme left */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  z-index: 2; /* Above the video */
+  color: #6552D0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.hero-content span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+}
+
+.btn-contact {
+  margin-top: 20px;
+  background-color: #6552D0;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #523bba;
+}
+.btn-contact a{
+  text-decoration: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content span {
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive scaling */
+    text-align: center; /* Center-align heading for better mobile appearance */
+    margin: 0px 0; /* Add spacing */
+  }
+  
+  .btn-contact {
+    font-size: 1rem;
+    padding: 10px 20px; /* Comfortable button size */
+    display: block; /* Ensure it doesn’t sit inline */
+    margin: 20px auto; /* Center-align the button */
+    text-align: center; /* Ensures text within the button is centered */
+  }
+  
+  .hero-content {
+    padding: 10px; /* Add padding for breathing space */
+    text-align: center; /* Center-align all text within the hero content */
+  }
+  
+  video {
+    max-width: 100%; /* Ensure video is responsive */
+    height: auto;
+  }
+  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+}  
+  .bsb-hero-5 img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  .offcanvas {
+      z-index: 1050; 
+  } 
+  
+  
+    h3 {
+      font-size: 1.5rem;
+      color: #007bff; /* Use a primary color */
+      font-weight: bold;
+  }
+  
+  p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #6c757d; /* Muted color for paragraphs */
+  }
+  
+  strong {
+      font-weight: bold;
+      color: #333;
+  }
+  
+  .text-primary {
+      color: #007bff; /* Apply your brand's primary color */
+  }
+  
+  .lead {
+      font-size: 1.25rem;
+      color: #495057; /* Muted dark color */
+  }
+  
+  .text-muted {
+      color: #6c757d; /* Standard muted color for softer text */
+   }
+
+   .card {
+    border: none;
+    background-color: #f8fbff;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+#cookiePopup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    z-index: 1000;
+}
+#cookiePopup button {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* FAQ */
+.faq-section {
+background-color: #f9f9f9;
+padding: 40px 0;
+}
+
+.accordion-button {
+background-color: #fff;
+font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+background-color: #dfe6e9;
+}
+
+.accordion-body {
+font-size: 1rem;
+color: #555;
+}
+
+/* Loader Styles */
+.loader-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.8);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 9999;
+}
+
+.loader-spinner {
+border: 8px solid #f3f3f3;
+border-top: 8px solid #3498db;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+.content {
+visibility: hidden;
+}
+
+/* Custom message styling */
+#loader-message {
+margin-top: 15px;
+font-size: 16px;
+font-weight: bold;
+color: #555;
+}
+section {
+display: block;
+}
+.bsb-hero-5 img {
+width: 100vw; /* Ensures it takes the full width of the viewport */
+max-width: 100%; /* Prevents overflow beyond container */
+height: auto; /* Maintains aspect ratio */
+overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+.service-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+padding: 40px 20px;
+background-color: #f9f9f9;
+}
+
+.service-card {
+background-color: #fff;
+width: 320px;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.service-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+font-size: 2.5em;
+margin-bottom: 15px;
+color: #007bff;
+}
+
+.service-card h3 {
+font-size: 1.75em;
+margin-bottom: 10px;
+font-family: 'Poppins', sans-serif;
+color: #333;
+}
+
+.service-card p {
+font-size: 1em;
+color: #666;
+line-height: 1.6;
+font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+.service-card {
+width: 100%;
+}
+#btn1{
+width: 300px;
+}
+#btn2{
+width: 300px;
+}
+#scrollspyHero{
+height: 100vh;
+}
+}
+/* 
+@media (max-width: 992px) {
+.navbar-brand img {
+max-height: 70px;
+}
+}
+
+@media (min-width: 992px) {
+.navbar-brand img {
+max-height: 70px; 
+}
+} */
+
+@media (max-width: 576px) {
+.button-container {
+flex-direction: column;
+} 
+
+.button-container .btn {
+width: 100%;
+margin-bottom: 10px;
+}
+.button-container .btn:last-child {
+margin-bottom: 0;
+}
+}
+
+
+  
